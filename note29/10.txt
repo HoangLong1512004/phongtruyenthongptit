@@ -1,0 +1,3 @@
+1.hiển thị con trỏ chuột
+2.tương tác với khổi block hiện slide
+3. thêm ánh sáng cho phòng

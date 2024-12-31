@@ -1,0 +1,51 @@
+TS Vũ Văn San, Giám đốc Học viện ký kết thực hiện dự án VOYAGE (năm 2016)
+        <div class="mySlides fade">
+            <div class="numbertext">1</div>
+            <img src="../pictures/frame20/pic1.jpg">
+            <div class="text">Lễ ký kết biên bản ghi nhớ giữa Học viện và Viện nghiên cứu điện tử Viễn thông (ETRI) Hàn Quốc (năm 1998)</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">2</div>
+            <img src="../pictures/frame20/pic2.jpg">
+            <div class="text">Đoàn Bộ Bưu điện Vương quốc Campuchia thăm và làm việc với Học viện (năm1999)</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">3</div>
+            <img src="../pictures/frame20/pic3.jpg">
+            <div class="text">PGS.TS Phạm Đạo, Giám đốc Học viện tham dự Hội đồng thông tin truyền thông Châu Á lần thứ 23 (năm 2000)</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">4</div>
+            <img src="../pictures/frame20/pic4.jpg">
+            <div class="text">TS. Nguyễn Kim Lan, Phó giám đốc Học viện tham dự Hội nghị “Hội đồng thông tin truyền thông Châu Á AIC” lần thứ 26 (năm 2001)</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">5</div>
+            <img src="../pictures/frame20/pic5.jpg">
+            <div class="text">Các tân Cử nhân, Kỹ sư nước CHDCND Lào chụp ảnh lưu niệm với các Thầy Cô giáo (năm 2002)</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">6</div>
+            <img src="../pictures/frame20/pic6.jpg">
+            <div class="text">Đoàn đại biểu Cuba thăm và làm việc với Học viện (năm 2003)</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">7</div>
+            <img src="../pictures/frame20/pic7.jpg">
+            <div class="text">Đoàn Viện nghiên cứu Điện tử Viễn thông (ETRI) Hàn Quốc tham gia Hội nghị khoa học quốc tế tổ chức tại TP Hồ Chí Minh (năm 2004)</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">8</div>
+            <img src="../pictures/frame20/pic8.jpg">
+            <div class="text">Lãnh đạo Học viện tiếp Đoàn trường đại học Queen Mary – Vương quốc Anh (năm 2006)</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">9</div>
+            <img src="../pictures/frame20/pic9.jpg">
+            <div class="text">Lễ khai giảng chương trình đào tạo cho các nước thứ 3 (năm 2007)</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">10</div>
+            <img src="../pictures/frame20/pic10.jpg">
+            <div class="text">Lễ ký kết biên bản ghi nhớ hợp tác giữa Học viện với Đại học Hà Nội và Đại học kinh tế- Đại học quốc gia Hà Nội (năm 2008)</div>
+        </div>

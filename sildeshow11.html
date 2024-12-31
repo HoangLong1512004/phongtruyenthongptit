@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slideshow</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .back-button {
+			position: absolute;
+			top: 0;
+		}
+
+		.play-sound-button{
+			position: absolute;
+			top: 0;
+			left: 100px;
+		}
+        .slideshow-container {
+            position: relative;
+            max-width: 100%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .mySlides {
+            display: none;
+            text-align: center;
+        }
+
+        img {
+            width: 80%;
+            height: auto;
+        }
+
+        .button {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            padding: 10px 15px;
+            color: white;
+            font-weight: bold;
+            background-color: rgba(0, 0, 0, 0.7);
+            border: none;
+            border-radius: 5px;
+            user-select: none;
+            transform: translateY(-50%);
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        .text {
+            background-color: black;
+            color: red;
+            font-size: 28px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active {
+            background-color: #717171;
+        }
+        .audio {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1</div>
+            <img src="/pictures/frame6/pic1.jpg">
+            <div class="text">Phó Thủ tướng Chính phủ Nguyễn Khánh cùng Lãnh đạo các Bộ, Ngành tại Lễ ra mắt Học viện(năm 1997)</div>
+            <div>
+                <audio controls>
+                    <source class="audio" src="pictures/frame6/1.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">2</div>
+            <img src="/pictures/frame6/pic2.jpg">
+            <div class="text">Tổng bí thư Lê Khả Phiêu thăm và làm việc với Học viện (năm 1998)</div>
+            <div>
+                <audio controls>
+                    <source src="pictures/frame6/2.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">3</div>
+            <img src="/pictures/frame6/pic3.jpg">
+            <div class="text">Thủ tướng Chính phủ Phan Văn Khải và Lãnh đạo Bộ, Ngành thăm và làm việc với Trung tama CNTT-CDIT (năm 2001)</div>
+            <div>
+                <audio controls>
+                    <source src="pictures/frame6/3.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">4</div>
+            <img src="/pictures/frame6/pic4.jpg">
+            <div class="text">Phó thủ tướng thường trục Chính phủ Nguyễn Tấn DŨng và Bộ trưởng Bộ BCVT Đỗ Trung Tá thăm trương chình đào tạo từ xa tại Trung tâm Đào tạo BCVT1(năm 2002)</div>
+            <div>
+                <audio controls>
+                    <source src="pictures/frame6/4.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">5</div>
+            <img src="/pictures/frame6/pic5.jpg">
+            <div class="text">Chủ nhiệm uỷ ban VH-GD Thanh thiếu niên và Nhi đồng của Quốc Hội Trần Thị Tâm Đan và Lãnh đạo Bộ, Ngành thăm Học viên(năm 2004)</div>
+            <div>
+                <audio controls>
+                    <source src="pictures/frame6/5.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">6</div>
+            <img src="/pictures/frame6/pic6.jpg">
+            <div class="text">Bộ trưởng Bộ KHCN Hoàng Văn Phong và Bộ trưởng Bộ BCVT Đỗ Trung Tá thăm và làm việc với Học viện(năm 2005)</div>
+            <div>
+                <audio controls>
+                    <source src="pictures/frame6/6.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">7</div>
+            <img src="/pictures/frame6/pic7.jpg">
+            <div class="text">Bộ trưởng Bộ Thông tin và Truyền thông Lê Doãn Hợp thăm và làm việc với Học Viện (năm 2007)</div>
+            <div>
+                <audio controls>
+                    <source src="pictures/frame6/7.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">8</div>
+            <img src="/pictures/frame6/pic8.jpg">
+            <div class="text">Bộ trưởng Bộ BCVT Lào KHAMLOUAT SIDLAKONE cùng đoàn đại biểu thăm và làm việc với Học viện(năm 2008)</div>
+            <div>
+                <audio controls>
+                    <source src="pictures/frame6/8.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">9</div>
+            <img src="/pictures/frame6/pic9.jpg">
+            <div class="text">Phó Thủ tướng Chính phủ Nguyễn Thiện Nhân và GS>TSKH Đỗ Trung Tá, nguyên Bộ trưởng Bộ BCVT thăm Phòng truyền thống Học Viện(năm 2013)</div>
+            <div>
+                <audio controls>
+                    <source src="pictures/frame6/9.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">10</div>
+            <img src="/pictures/frame6/pic10.jpg">
+            <div class="text">Chủ tịch Hội Liên hiệp Phụ nữ Việt Năm Nguyễn Thị Thanh Hoà thăm và làm việc với Học viện(năm 2013)</div>
+            <div>
+                <audio controls>
+                    <source  src="pictures/frame6/10.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+        <!-- Thêm các slide khác ở đây -->
+
+        <button class="button prev" onclick="plusSlides(-1)">&#10094; Previous</button>
+        <button class="button next" onclick="plusSlides(1)">Next &#10095;</button>
+    </div>
+
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+        <span class="dot" onclick="currentSlide(8)"></span>
+        <span class="dot" onclick="currentSlide(9)"></span>
+        <span class="dot" onclick="currentSlide(10)"></span>
+
+    </div>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            const slides = document.getElementsByClassName("mySlides");
+            const dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1; }
+            if (n < 1) { slideIndex = slides.length; }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";  
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+</body>
+
+</html>

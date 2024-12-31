@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>My first three.js app</title>
+	<style>
+		body {
+			margin: 0;
+			cursor: crosshair;
+		}
+
+		iframe .back-button {
+			position: absolute;
+			top: 0;
+		}
+
+		iframe .play-sound-button{
+			position: absolute;
+			top: 0;
+			left: 100px;
+		}
+
+		#myIframe {
+			display: none;
+			/* Ẩn iframe ban đầu */
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border: none;
+			background-color: rgba(255, 255, 255, 0.9);
+			/* Nền trắng mờ */
+			z-index: 10;
+			/* Đặt iframe lên trên */
+		}
+
+
+		#myIframe1 {
+			display: none;
+			/* Ẩn iframe ban đầu */
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border: none;
+			background-color: rgba(255, 255, 255, 0.9);
+			/* Nền trắng mờ */
+			z-index: 10;
+			/* Đặt iframe lên trên */
+		}
+
+		#myIframe2 {
+			display: none;
+			/* Ẩn iframe ban đầu */
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border: none;
+			background-color: rgba(255, 255, 255, 0.9);
+			/* Nền trắng mờ */
+			z-index: 10;
+			/* Đặt iframe lên trên */
+		}
+
+		#myIframe3 {
+			display: none;
+			/* Ẩn iframe ban đầu */
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border: none;
+			background-color: rgba(255, 255, 255, 0.9);
+			/* Nền trắng mờ */
+			z-index: 10;
+			/* Đặt iframe lên trên */
+		}
+		#myIframe4 {
+			display: none;
+			/* Ẩn iframe ban đầu */
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border: none;
+			background-color: rgba(255, 255, 255, 0.9);
+			/* Nền trắng mờ */
+			z-index: 10;
+			/* Đặt iframe lên trên */
+		}
+		#myIframe5 {
+			display: none;
+			/* Ẩn iframe ban đầu */
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border: none;
+			background-color: rgba(255, 255, 255, 0.9);
+			/* Nền trắng mờ */
+			z-index: 10;
+			/* Đặt iframe lên trên */
+		}
+		#myIframe6 {
+			display: none;
+			/* Ẩn iframe ban đầu */
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border: none;
+			background-color: rgba(255, 255, 255, 0.9);
+			/* Nền trắng mờ */
+			z-index: 10;
+			/* Đặt iframe lên trên */
+		}
+		#myIframe7 {
+			display: none;
+			/* Ẩn iframe ban đầu */
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border: none;
+			background-color: rgba(255, 255, 255, 0.9);
+			/* Nền trắng mờ */
+			z-index: 10;
+			/* Đặt iframe lên trên */
+		}
+		#myIframe8 {
+			display: none;
+			/* Ẩn iframe ban đầu */
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border: none;
+			background-color: rgba(255, 255, 255, 0.9);
+			/* Nền trắng mờ */
+			z-index: 10;
+			/* Đặt iframe lên trên */
+		}
+		#myIframe9 {
+			display: none;
+			/* Ẩn iframe ban đầu */
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border: none;
+			background-color: rgba(255, 255, 255, 0.9);
+			/* Nền trắng mờ */
+			z-index: 10;
+			/* Đặt iframe lên trên */
+		}
+		#myIframe10 {
+			display: none;
+			/* Ẩn iframe ban đầu */
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border: none;
+			background-color: rgba(255, 255, 255, 0.9);
+			/* Nền trắng mờ */
+			z-index: 10;
+			/* Đặt iframe lên trên */
+		}
+		#myIframe11 {
+			display: none;
+			/* Ẩn iframe ban đầu */
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border: none;
+			background-color: rgba(255, 255, 255, 0.9);
+			/* Nền trắng mờ */
+			z-index: 10;
+			/* Đặt iframe lên trên */
+		}
+		#myIframe12 {
+			display: none;
+			/* Ẩn iframe ban đầu */
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border: none;
+			background-color: rgba(255, 255, 255, 0.9);
+			/* Nền trắng mờ */
+			z-index: 10;
+			/* Đặt iframe lên trên */
+		}
+		#myIframe13 {
+			display: none;
+			/* Ẩn iframe ban đầu */
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border: none;
+			background-color: rgba(255, 255, 255, 0.9);
+			/* Nền trắng mờ */
+			z-index: 10;
+			/* Đặt iframe lên trên */
+		}
+		#myIframe14 {
+			display: none;
+			/* Ẩn iframe ban đầu */
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 80%;
+			height: 80%;
+			border: none;
+			background-color: rgba(255, 255, 255, 0.9);
+			/* Nền trắng mờ */
+			z-index: 10;
+			/* Đặt iframe lên trên */
+		}
+		#myIframe15 {
+			display: none;
+			/* Ẩn iframe ban đầu */
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border: none;
+			background-color: rgba(255, 255, 255, 0.9);
+			/* Nền trắng mờ */
+			z-index: 10;
+			/* Đặt iframe lên trên */
+		}
+		#myIframe16 {
+			display: none;
+			/* Ẩn iframe ban đầu */
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border: none;
+			background-color: rgba(255, 255, 255, 0.9);
+			/* Nền trắng mờ */
+			z-index: 10;
+			/* Đặt iframe lên trên */
+		}
+		#myIframe17 {
+			display: none;
+			/* Ẩn iframe ban đầu */
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border: none;
+			background-color: rgba(255, 255, 255, 0.9);
+			/* Nền trắng mờ */
+			z-index: 10;
+			/* Đặt iframe lên trên */
+		}
+		#myIframe18 {
+			display: none;
+			/* Ẩn iframe ban đầu */
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border: none;
+			background-color: rgba(255, 255, 255, 0.9);
+			/* Nền trắng mờ */
+			z-index: 10;
+			/* Đặt iframe lên trên */
+		}
+		#myIframe19 {
+			display: none;
+			/* Ẩn iframe ban đầu */
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border: none;
+			background-color: rgba(255, 255, 255, 0.9);
+			/* Nền trắng mờ */
+			z-index: 10;
+			/* Đặt iframe lên trên */
+		}
+		#myIframe20 {
+			display: none;
+			/* Ẩn iframe ban đầu */
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border: none;
+			background-color: rgba(255, 255, 255, 0.9);
+			/* Nền trắng mờ */
+			z-index: 10;
+			/* Đặt iframe lên trên */
+		}
+		#myIframe21 {
+			display: none;
+			/* Ẩn iframe ban đầu */
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border: none;
+			background-color: rgba(255, 255, 255, 0.9);
+			/* Nền trắng mờ */
+			z-index: 10;
+			/* Đặt iframe lên trên */
+		}
+		#myIframe22 {
+			display: none;
+			/* Ẩn iframe ban đầu */
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 90%;
+			height: 90%;
+			border: none;
+			background-color: rgba(255, 255, 255, 0.9);
+			/* Nền trắng mờ */
+			z-index: 10;
+			/* Đặt iframe lên trên */
+		}	
+			#myIframe23 {
+			display: none;
+			/* Ẩn iframe ban đầu */
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border: none;
+			background-color: rgba(255, 255, 255, 0.9);
+			/* Nền trắng mờ */
+			z-index: 10;
+			/* Đặt iframe lên trên */
+		}
+		#myIframe24 {
+			display: none;
+			/* Ẩn iframe ban đầu */
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border: none;
+			background-color: rgba(255, 255, 255, 0.9);
+			/* Nền trắng mờ */
+			z-index: 10;
+			/* Đặt iframe lên trên */
+		}
+		.back-button {
+			position: absolute;
+			top: 20px;
+			right: 20px;
+			padding: 10px 15px;
+			font-size: 16px;
+			cursor: pointer;
+			background-color: red;
+			color: white;
+			border: none;
+			border-radius: 5px;
+			z-index: 11;
+			/* Đặt nút lên trên iframe */
+		}
+
+		.red-dot {
+			position: fixed;
+			width: 5px;
+			height: 5px;
+			background-color: red;
+			border-radius: 50%;
+			top: 50%;
+			/* Đặt vị trí chấm đỏ ở giữa màn hình */
+			left: 50%;
+			transform: translate(-50%, -50%);
+			/* Giúp nó căn giữa chính xác */
+			z-index: 12;
+			/* Đặt chấm đỏ lên trên các phần tử khác */
+		}
+	</style>
+</head>
+
+<div>
+	<iframe id="myIframe" src="dienthoai.html" >
+	</iframe>
+	<audio id="sound" src="models/phone/phone.mp3" ></audio>
+</div>
+<div>
+	<iframe id="myIframe1" src="vali.html" >
+	</iframe>
+	<audio id="sound1" src="models/vali/vali.mp3"></audio>
+</div>
+<div>
+	<iframe id="myIframe2" src="radio.html" >
+	</iframe>
+	<audio id="sound2" src="models/vali/vali.mp3"></audio>
+</div>
+<div>
+	<iframe id="myIframe3" src="tu3.html" >
+	</iframe>
+	<audio id="sound3" src="models/tu3/tu.mp3"></audio>
+</div>
+<div>
+	<iframe id="myIframe4" src="slideshow1.html" >
+	</iframe>
+	<audio id="sound4" src="../pictures/frame22/D11.mp3"></audio>
+</div>
+<div>
+	<iframe id="myIframe5" src="slideshow2.html">
+	</iframe>
+	<audio id="sound5" src="../pictures/frame21/D8.mp3"></audio>
+</div>
+<div>
+	<iframe id="myIframe6" src="slideshow3.html">
+	</iframe>
+</div>
+<div>
+	<iframe id="myIframe7" src="slideshow4.html">
+	</iframe>
+</div>
+
+<div>
+	<iframe id="myIframe8" src="https://eript.ptit.edu.vn/" width="60" height="40"></iframe>
+</div>
+<div>
+	<iframe id="myIframe9" src="https://cdit.ptit.edu.vn/" width="60" height="40"></iframe>
+</div>
+<div>
+	<iframe id="myIframe10" src="https://ptit.edu.vn/" width="60" height="40"></iframe>
+</div>
+<div>
+	<iframe id="myIframe11" src="slideshow5.html" ></iframe>
+</div>
+<div>
+	<iframe id="myIframe12" src="slideshow6.html" ></iframe>
+	<audio id="sound5" src="/pictures/frame14/C8.mp3"></audio>
+</div>
+<div>
+	<iframe id="myIframe13" src="slideshow7.html" ></iframe>
+	<audio id="sound6" src="/pictures/frame13/C6.mp3"></audio>
+</div>
+
+<div>
+	<iframe id="myIframe14" src="https://ptit.edu.vn/" width="60" height="40"></iframe>
+</div>
+<div>
+	<iframe id="myIframe15" src="slideshow8.html" width="60" height="40"></iframe>
+</div>
+
+<div>
+	<iframe id="myIframe16" width="560" height="315" src="https://www.youtube.com/embed/o20Ua6RD0Ak?si=ChUJVBwoDYy1GriG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+<div>
+	<iframe id="myIframe17" src="slideshow9.html" ></iframe>
+	<audio id="sound17" src="/pictures/frame8/C3.mp3"></audio>
+</div>
+<div>
+	<iframe id="myIframe18" src="slideshow10.html" ></iframe>
+	<audio id="sound18" src="/pictures/frame7/C1.mp3"></audio>
+</div>
+<div>
+	<iframe id="myIframe19" src="sildeshow11.html" ></iframe>
+</div>
+<div>
+	<iframe id="myIframe20" src="slideshow12.html" ></iframe>
+</div>
+<div>
+	<iframe id="myIframe21" src="slideshow13.html" ></iframe>
+</div>
+<div>
+	<iframe id="myIframe22" src="slideshow14.html" ></iframe>
+</div>
+<div>
+	<iframe id="myIframe23" src="slideshow15.html" ></iframe>
+	<audio id="sound23" src="/pictures/frame1/A4.mp3"></audio>
+</div>
+<div>
+	<iframe id="myIframe24" src="slideshow16.html" ></iframe>
+	<audio id="sound24" src="/pictures/frame2/A3.mp3"></audio>
+</div>
+<div class="red-dot"></div> <!-- Dấu chấm đỏ được thêm vào đây -->
+<script src="lib/FBXLoader.js"></script>
+<script type="module" src="/main1.js"></script>
+</body>
+
+</html>
